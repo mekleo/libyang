@@ -203,6 +203,7 @@ endif()
 set(libsrc
     src/common.c
     src/compat.c
+    src/json.c
     src/log.c
     src/hash_table.c
     src/set.c

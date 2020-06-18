@@ -1813,6 +1813,13 @@ lyd_compare(const struct lyd_node *node1, const struct lyd_node *node2, int opti
                 return LY_ENOT;
             }
             break;
+#if 0
+        case LYD_JSON:
+            if (lyjson_value_compare(LYD_NODE_CTX(node1), opaq1->value, opaq1->val_prefs, opaq2->value, opaq2->val_prefs)) {
+                return LY_ENOT;
+            }
+            break;
+#endif
         case LYD_SCHEMA:
             /* not allowed */
             LOGINT(LYD_NODE_CTX(node1));
