@@ -94,7 +94,7 @@ void yyerror(YYLTYPE *yylloc, void *scanner, struct yang_parameter *param, ...);
 %token UNION_KEYWORD
 %token ANYXML_KEYWORD
 %token WHITESPACE
-%token ERROR
+%token TOKEN_ERROR
 %token EOL
 %token STRING
 %token STRINGS
@@ -107,7 +107,7 @@ void yyerror(YYLTYPE *yylloc, void *scanner, struct yang_parameter *param, ...);
 %token INTEGER
 %token NON_NEGATIVE_INTEGER
 %token ZERO
-%token DECIMAL
+%token TOKEN_DECIMAL
 %token ARGUMENT_KEYWORD
 %token AUGMENT_KEYWORD
 %token BASE_KEYWORD
