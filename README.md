@@ -56,7 +56,7 @@ packages are always build from current `master` branch (latest release). If you 
    `--enable-utf` and `--enable-unicode-properties`)
 * cmocka >= 1.0.0 (for tests only, see [Tests](#Tests))
 
-### Build Requirements for Win32
+### Build Requirements for Windows
 * C compiler (msvc 14.0...)
 * cmake-gui >= 3.17.2 (https://cmake.org/download/)
 * pcre for Windows >= 7.0 (binaries)(http://gnuwin32.sourceforge.net/packages/pcre.htm)
@@ -65,15 +65,21 @@ packages are always build from current `master` branch (latest release). If you 
 * pthreads for Windows >= 3.0.0 (https://sourceforge.net/projects/pthreads4w/)
 * sed for Windows >= 4.2.1 (http://gnuwin32.sourceforge.net/packages/sed.htm)
 
- 
 #### Optional
 
 * doxygen (for generating documentation)
 * valgrind (for enhanced testing)
 
-### Runtime Requirements
+### Runtime Requirements for *nix
 
 * libpcre
+
+### Runtime Requirements for Windows
+
+* libpcre (`pcre3.dll`)
+* dlfcn-win32 (`dl.dll`)
+* ptheads for Windows (`pthreadVC2.dll`)
+
 
 ## Building
 
